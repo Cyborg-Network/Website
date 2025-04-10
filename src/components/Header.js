@@ -4,6 +4,7 @@ import Logo from './Logo'
 import Button from './Button'
 import AngleDown from './icons/AngleDown'
 import { useRouter } from 'next/router'
+import { motion } from 'framer-motion'
 
 const Header = () => {
 
@@ -18,26 +19,31 @@ const Header = () => {
         <Logo/>
         <nav>
             <ul>
-                <li onClick={()=>setToggle(!toggle)}><Link href="/" className={`${router.asPath === "/" ? "active" : router.asPath === "/home" ? "active" : ""}`}>Home</Link></li>
-                <li onClick={()=>setToggle(!toggle)}><Link href="/solution" className={`${router.asPath === "/solution" ? "active" : ""}`}>Solution</Link></li>
-                <li onClick={()=>setToggle(!toggle)}><Link href="/about" className={`${router.asPath === "/about" ? "active" : router.asPath === "/about#faq" ? "active" : ""}`}>About</Link></li>
-                <li onClick={()=>setToggle(!toggle)}><Link href="/about#faq">FAQ</Link></li>
                 <li className='submenu'>
-                    <Link href="/">Documents <span className='drop-icon'><AngleDown/></span></Link>
+                    <Link href="/">Products</Link>
                     <div className='dropdown'>
-                    <div className='clip-wrap'>
-                    <div className='box-clip clip-border'></div>
-                    <ul>
-                        <li onClick={()=>setToggle(!toggle)}><Link href="/docs/cyborg-one-pager.pdf" target='_blank'>One Pager</Link></li>
-                        {/* <li onClick={()=>setToggle(!toggle)}><Link href="/docs/cyborg-lite-paper-v1.pdf" target='_blank'>Lite Paper</Link></li> */}
-                        <li onClick={()=>setToggle(!toggle)}><Link href="/docs/cyborg-white-paper-v1.pdf" target='_blank'>White Paper</Link></li>
-                    </ul>
-                    </div>
+                        <ul>
+                            <li onClick={()=>setToggle(!toggle)}><Link href="/cyborg-connect" className={`${router.asPath === "/cyborg-connect" ? "active" : ""}`}>Cyborg Connect</Link></li>
+                            <li onClick={()=>setToggle(!toggle)}><Link href="/cyborg-miner" className={`${router.asPath === "/cyborg-miner" ? "active" : ""}`}>Cyborg Miner</Link></li>
+                        </ul>
                     </div>
                 </li>
+                <li className='submenu'>
+                    <Link href="/">Docs</Link>
+                    <div className='dropdown'>
+                        <ul>
+                            <li onClick={()=>setToggle(!toggle)}><Link href="/docs/white-paper.pdf" target='_blank'>Litepaper</Link></li>
+                            <li onClick={()=>setToggle(!toggle)}><Link href="/docs/one-pager.pdf" target='_blank'>One Pager</Link></li>
+                        </ul>
+                    </div>
+                </li>
+                <li onClick={()=>setToggle(!toggle)}><Link href="/team" className={`${router.asPath === "/team" ? "active" : ""}`}>Team</Link></li>
+                <li onClick={()=>setToggle(!toggle)}><Link href="/docs/FAQ.pdf" target='_blank'>FAQ</Link></li>
+                <div className='header-btn'>
+                    <Button onClick={()=>setToggle(!toggle)} title="Join Now" link="https://tally.so/r/mVN4qg" size="btn-md" theme="dark"/>
+                </div>
             </ul>
         </nav>
-        <Button onClick={()=>setToggle(!toggle)} title="Register Interest" link="https://docs.google.com/forms/d/e/1FAIpQLScRglKnzT3ZCHkG8KL7yDC0oOfBZlqA0isnPe-oEtuHDDINDA/viewform?usp=sf_link" size="btn-md"/>
         <div className={`toggle-menu ${toggle ? "" : "active"}`} onClick={()=>setToggle(!toggle)}>
             <div className='toggle-wrap'>
                 <span></span>

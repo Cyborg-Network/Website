@@ -12,7 +12,7 @@ import { motion } from "framer-motion"
 export default function Solution() {
   return (
     <>
-      <Head>
+      {/* <Head>
         <title>Solution | Cyborg Network</title>
         <meta name="description" content="Cyborg Network - An Untapped Market" />
       </Head>
@@ -168,7 +168,7 @@ export default function Solution() {
               </div>
             </div>
             </div>
-            </section>
+            </section> */}
     </>
   )
 }

@@ -20,12 +20,21 @@ import nd from '../../public/images/partners/nd.svg'
 import aws from '../../public/images/backers/aws.png'
 import ms from '../../public/images/backers/ms.png'
 import appchain from '../../public/images/programs/appchain.png'
-import polkadot from '../../public/images/programs/polkadot.png'
 import tdefi from '../../public/images/programs/tdefi.png'
 import whx from '../../public/images/programs/WHX.png'
 import exp from '../../public/images/programs/EXP.png'
 import pba from '../../public/images/programs/PBA.png'
 import bybit from '../../public/images/programs/BYBIT.png'
+
+import nip from '../../public/images/Partners/nip.png'
+import cess from '../../public/images/Partners/cess.png'
+import ezkl from '../../public/images/Partners/ezkl.png'
+import difc from '../../public/images/Partners/difc.png'
+import dac from '../../public/images/Partners/dac.png'
+import pol from '../../public/images/Partners/pol.png'
+import wfgp from '../../public/images/Partners/wfgp.png'
+import pban from '../../public/images/Partners/pba.png'
+
 
 const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
   ssr: false,
@@ -163,28 +172,28 @@ function Partner() {
       return (
         <OwlCarousel responsive={ResponsiveOne} className='owl-theme' autoplay items={6} smartSpeed={3000} autoplayTimeout={3000}>
           <div className="ps-content">
-          <a href="https://www.tanssi.network/appchain-pioneers-program"><Image src={appchain} alt="Appchain"/></a>
+          <a href=""><Image src={nip} alt="nip"/></a>
           </div>
           <div className="ps-content">
-          <a href="https://www.polkadotglobalseries.com/incubator/"><img src="/images/programs/polkadot.png" alt="Polkadot"/></a>
+          <a href=""><Image src={cess} alt="cess"/></a>
           </div>
           <div className="ps-content">
-          <a href="https://www.hkweb3month.com/hackathon"><Image src={whx} alt="whx"/></a>
+          <a href=""><Image src={ezkl} alt="ezkl"/></a>
           </div>
           <div className="ps-content">
-          <a href="https://www.encode.club/encode-polkadot-accelerator-2023"><Image src={exp} alt="exp"/></a>
+          <a href=""><Image src={difc} alt="difc"/></a>
           </div>
           <div className="ps-content">
-          <a href="https://polkadot.network/development/blockchain-academy/"><Image src={pba} alt="pba"/></a>
+          <a href=""><Image src={dac} alt="dac"/></a>
           </div>
           <div className="ps-content">
-          <a href="https://i.bybit.com/IabbYaT"><Image src={bybit} alt="bybit"/></a>
+          <a href=""><Image src={pol} alt="pol"/></a>
           </div>
           <div className="ps-content">
-          <a href="#"><Image src={ms} alt="Microsoft"/></a>
+          <a href=""><Image src={wfgp} alt="wfgp"/></a>
           </div>
           <div className="ps-content">
-          <a href="https://tde.fi/acceleration-program-with-DMCC"><Image src={tdefi} alt="TDeFi"/></a>
+          <a href=""><Image src={pban} alt="pban"/></a>
           </div>
         </OwlCarousel>
       );
