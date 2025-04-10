@@ -26,14 +26,14 @@ import exp from '../../public/images/programs/EXP.png'
 import pba from '../../public/images/programs/PBA.png'
 import bybit from '../../public/images/programs/BYBIT.png'
 
-import nip from '../../public/images/Partners/nip.png'
-import cess from '../../public/images/Partners/cess.png'
-import ezkl from '../../public/images/Partners/ezkl.png'
-import difc from '../../public/images/Partners/difc.png'
-import dac from '../../public/images/Partners/dac.png'
-import pol from '../../public/images/Partners/pol.png'
-import wfgp from '../../public/images/Partners/wfgp.png'
-import pban from '../../public/images/Partners/pba.png'
+import nip from '../../public/images/partners/nip.png'
+import cess from '../../public/images/partners/cess.png'
+import ezkl from '../../public/images/partners/ezkl.png'
+import difc from '../../public/images/partners/difc.png'
+import dac from '../../public/images/partners/dac.png'
+import pol from '../../public/images/partners/pol.png'
+import wfgp from '../../public/images/partners/wfgp.png'
+import pban from '../../public/images/partners/pba.png'
 
 
 const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
