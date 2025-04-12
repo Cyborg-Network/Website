@@ -19,20 +19,13 @@ import yh from '../../public/images/partners/yh.svg'
 import nd from '../../public/images/partners/nd.svg'
 import aws from '../../public/images/backers/aws.png'
 import ms from '../../public/images/backers/ms.png'
-import appchain from '../../public/images/programs/appchain.png'
-import tdefi from '../../public/images/programs/tdefi.png'
-import whx from '../../public/images/programs/WHX.png'
-import exp from '../../public/images/programs/EXP.png'
-import pba from '../../public/images/programs/PBA.png'
-import bybit from '../../public/images/programs/BYBIT.png'
-
 import nip from '../../public/images/partners/nip.png'
 import cess from '../../public/images/partners/cess.png'
 import ezkl from '../../public/images/partners/ezkl.png'
 import difc from '../../public/images/partners/difc.png'
 import dac from '../../public/images/partners/dac.png'
 import pol from '../../public/images/partners/pol.png'
-import wfgp from '../../public/images/partners/wfgp.png'
+import wfgp from '../../public/images/partners/wfgp.svg'
 import pban from '../../public/images/partners/pba.png'
 
 
@@ -170,7 +163,7 @@ function Partner() {
 
   function Programs() {
       return (
-        <OwlCarousel responsive={ResponsiveOne} className='owl-theme' autoplay items={6} smartSpeed={3000} autoplayTimeout={3000}>
+        <OwlCarousel responsive={ResponsiveOne} className='owl-theme' autoplay items={6} smartSpeed={3000} autoplayTimeout={3000} loop>
           <div className="ps-content">
           <a href=""><Image src={nip} alt="nip"/></a>
           </div>

@@ -46,7 +46,7 @@ export default function Home() {
           <div className='st-left'>
             <div className='st-box'>
               <h2><span className='text-gradient light'>Provide</span> inference nodes Earn rewards</h2>
-              <Button title="Start" link="https://tally.so/r/mVN4qg" size="btn-md" theme='light outline' icon={ExtLink}/>
+              <Button title="Start" link="https://tally.so/r/wazvG9" size="btn-md" theme='light outline' icon={ExtLink}/>
             </div>
             <div className='step-wrap'>
             <motion.div viewport={{ once: true }} transition={{ type: "spring", bounce: 0.25, duration: 2 }} initial={{ opacity: 0, translateY: 100 }} whileInView={{ opacity: 1, translateY: 0 }}>
@@ -83,7 +83,7 @@ export default function Home() {
           <div className="st-right">
             <div className='st-box'>
               <h2><span className='text-gradient light'>Launch</span> your AI apps at scale</h2>
-              <Button title="Start" link="https://tally.so/r/mVN4qg" size="btn-md" theme='light outline' icon={ExtLink}/>
+              <Button title="Start" link="https://tally.so/r/nGb5Ep" size="btn-md" theme='light outline' icon={ExtLink}/>
             </div>
             <div className='step-wrap'>
             <motion.div viewport={{ once: true }} transition={{ type: "spring", bounce: 0.25, duration: 2 }} initial={{ opacity: 0, translateY: 100 }} whileInView={{ opacity: 1, translateY: 0 }}>

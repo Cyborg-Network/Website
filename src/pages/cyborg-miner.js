@@ -41,7 +41,7 @@ export default function CyborgMiner() {
           <motion.p viewport={{ once: true }} transition={{ type: "spring", bounce: 0.25, duration: 1.5, delay: 0.25 }} initial={{ opacity: 0, translateY: 100 }} whileInView={{ opacity: 1, translateY: 0 }}>Join a groundbreaking network of AI miners, where your compute power fuels the future of intelligent infrastructure and earns you passive income.</motion.p>
           <div className='text-center'>
           <motion.div viewport={{ once: true }} transition={{ type: "spring", bounce: 0.25, duration: 1.5, delay: 0.5 }} initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }}>
-          <Button title="Connect Now" link="/connect-miner" size="btn-md" icon={plug}/>
+          <Button title="Connect Now" link="/connect-miner" target="_blank" size="btn-md" icon={plug}/>
           </motion.div>
           </div>
         </div>

@@ -8,7 +8,6 @@ import Logo from '@/components/Logo'
 
 
 export default function SoonPage() {
-  SoonPage.noLayout = true;
   return (
     <>
       <Head>
@@ -18,15 +17,12 @@ export default function SoonPage() {
 
       <section className='app-soon-section soon-section flow-hidden'>
         <div className='container'>
-          <div className='py-30'>
-            <Logo/>
-          </div>
           <div className='home-wrap d-flex a-center'>
             <motion.div className='d-left' viewport={{ once: true }} transition={{ type: "spring", bounce: 0.25, duration: 2 }} initial={{ opacity: 0, translateX: -200 }} whileInView={{ opacity: 1, translateX: 0 }}>
             <div className='hw-left'>
-            <h1 className="hero-heading">App Launching Soon</h1>
+            <h1 className="hero-heading"><span className='text-gradient'>App</span> Launching Soon</h1>
             <p className='home-desc'>Cyborg Connect helps AI apps deploy pre-trained models instantly across our global network of hyperlocal AI accelerators — delivering lightning-fast processing and ultra-low latency for your users.</p>
-            <Button title="Notify Me" link="/connect-miner" size="btn-md" icon={bell}/>
+            <Button title="Notify Me" link="https://tally.so/r/nGb5Ep" size="btn-md" icon={bell}/>
             </div>
             </motion.div>
 

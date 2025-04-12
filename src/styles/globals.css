@@ -1,6 +1,6 @@
 /* Accord ================================================= */
 
-@font-face {
+/* @font-face {
   font-family: 'Accord Alternate';
   font-weight: 400;
   src: local('Accord Alternate Regular'), local('AccordAlternate-Regular'), url('../../public/fonts/Accord/AccordAlternate-Regular.woff2') format('woff2');
@@ -19,11 +19,11 @@
   font-family: 'Accord Alternate';
   font-weight: 800;
   src: local('Accord Alternate ExtraBold'), local('AccordAlternate-ExtraBold'), url('../../public/fonts/Accord/AccordAlternate-ExtraBold.woff2') format('woff2');
-}
+} */
 
 /* Gilroy ================================================= */
 
-@font-face {
+/* @font-face {
   font-family: 'Gilroy';
   font-weight: 300;
   src: local('Gilroy Light'), url('../../public/fonts/Gilroy/Gilroy-Light.woff') format('woff');
@@ -63,7 +63,7 @@
   font-family: 'Gilroy';
   font-weight: 900;
   src: local('Gilroy Black'), url('../../public/fonts/Gilroy/Gilroy-Black.woff') format('woff');
-}
+} */
 
 /* Red Hat Display ================================================= */
 
@@ -132,8 +132,8 @@
   --bg-btn-dark: #27332D;
   --bg-btn-dark-hover: #47524D;
 
-  --accord: 'Accord Alternate';
-  --gilroy: 'Gilroy';
+  /* --accord: 'Accord Alternate';
+  --gilroy: 'Gilroy'; */
   --redhatdisplay: 'Red Hat Display';
   --light: 300;
   --regular: 400;
@@ -413,6 +413,8 @@ button.btn{
 }
 .btn.light.outline:hover{
   opacity: 1;
+  border-color: var(--bg-btn);
+  background: var(--bg-btn);
 }
 .btn-icon{
   max-width: 18px;
@@ -448,7 +450,7 @@ button.btn{
   background-repeat: no-repeat;
   position: relative;
 }
-.miner-soon-section{
+.miner-soon-section, .app-soon-section{
   background-image: url('../../public/images/hero-bg.svg');
   background-position: top center;
   background-size: cover;
@@ -456,6 +458,10 @@ button.btn{
 }
 .soon-section{
   min-height: 100vh;
+  margin-bottom: 60px;
+}
+.soon-section + footer{
+  display: none;
 }
 .home-hero-section::after, .connect-hero-section::after {
   content: "";
@@ -1101,6 +1107,9 @@ h1 span.break, h2 span.brea, p span.break{
 .a-center{
   align-items: center;
 }
+.j-between{
+  justify-content: space-between;
+}
 .hw-right{
   text-align: right;
 }
@@ -1435,13 +1444,26 @@ background: linear-gradient(160deg, rgba(1, 218, 99, 0.5), rgba(1, 218, 99, 0) 2
   margin-bottom: 30px;
 }
 .footer-credit{
-  text-align: center;
-  padding: 30px 15px;
-  border-top: 1px solid #191D1A;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 25px;
+  gap: 15px 30px;
+  flex-wrap: wrap;
 }
-.footer-credit p{
+.footer-credit p, .footer-credit a{
   font-size: 15px;
-  color: var(--text-light-48);
+  color: var(--text-dark-75);
+  transition: all 0.35s linear;
+}
+.footer-credit a:hover{
+  color: var(--text-green);
+  transition: all 0.35s linear;
+}
+.fc-left{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px 30px;
 }
 .fw-head{
   font-weight: var(--medium);
@@ -1616,7 +1638,7 @@ background: linear-gradient(160deg, rgba(1, 218, 99, 0.5), rgba(1, 218, 99, 0) 2
 }
 .tsx-main, .tsx-sub {
   display: flex;
-  gap: 30px;
+  gap: 25px 0;
   flex-wrap: wrap;
 }
 .tsx-sub{
@@ -1631,7 +1653,7 @@ background: linear-gradient(160deg, rgba(1, 218, 99, 0.5), rgba(1, 218, 99, 0) 2
   background-position: 360px center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 4px;
+  padding: 3px;
   border-radius: 200px;
   flex: 520px 0 0;
   margin: 0  auto;
@@ -1649,19 +1671,19 @@ background: linear-gradient(160deg, rgba(1, 218, 99, 0.5), rgba(1, 218, 99, 0) 2
   background-image: url(../../public/images/tsx-sub-bg.svg);
   background-position: center 220px;
   background-size: contain;
-  flex: auto 0 0;
+  flex: calc(100% / 6) 0 0;
   flex-direction: column;
   text-align: center;
   border: 0;
   border-radius: 24px;
-  padding: 0 25px 20px;
+  padding: 0 20px 25px;
 }
 .tsx-sub .tsx-box:hover{
   background-position: center 92px;
 }
 .tsx-img{
-  width: 144px;
-  height: 144px;
+  width: 134px;
+  height: 134px;
   object-fit: cover;
   object-position: center;
   border-radius: 100%;
@@ -1675,8 +1697,8 @@ background: linear-gradient(160deg, rgba(1, 218, 99, 0.5), rgba(1, 218, 99, 0) 2
   object-position: center;
 }
 .tsx-sub .tsx-img{
-  width: 144px;
-  height: 144px;
+  width: 114px;
+  height: 114px;
   object-fit: cover;
   object-position: center;
   border-radius: 100%;
@@ -1694,10 +1716,10 @@ background: linear-gradient(160deg, rgba(1, 218, 99, 0.5), rgba(1, 218, 99, 0) 2
   border-radius: 200px;
 }
 .tsx-content h4{
-  font-size: 30px;
+  font-size: 28px;
   color: var(--text-dark);
   font-weight: var(--bold);
-  line-height: 34px;
+  line-height: 32px;
   margin-bottom: 10px;
 }
 .tsx-content p {
@@ -1705,12 +1727,13 @@ background: linear-gradient(160deg, rgba(1, 218, 99, 0.5), rgba(1, 218, 99, 0) 2
   color: var(--text-green);
   font-weight: var(--bold);
 }
-.tsx-sub .tsx-content h4{
-  font-size: 26px;
+.tsx-sub .tsx-content h4 {
+  font-size: 20px;
   margin-bottom: 5px;
+  line-height: normal;
 }
 .tsx-sub .tsx-content p {
-  font-size: 19px;
+  font-size: 15px;
 }
 .tsx-link{
   width: 36px;
@@ -1733,19 +1756,25 @@ background: linear-gradient(160deg, rgba(1, 218, 99, 0.5), rgba(1, 218, 99, 0) 2
   transition: all 0.5s linear;
 }
 .tsx-sub .tsx-img .tsx-link {
-  top: calc(100% - 26px);
+  top: calc(100% - 18px);
   right: 0;
-  width: 34px;
-  height: 34px;
+  width: 32px;
+  height: 32px;
   border: 2px solid #fff;
+}
+.tsx-sub .tsx-img .tsx-link svg{
+  width: 16px;
+  height: 16px;
 }
 .tsx-link svg path{
   fill: var(--text-light);
 }
-.gallery-wrap{
+.gallery-wrap {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  max-height: 560px;
+  overflow-y: auto;
 }
 .gallery-wrap .gallery-item {
   border: 1px solid #daebe1;
@@ -2651,11 +2680,11 @@ filter: blur(75px);
   height: auto;
 }
 .soon-section .home-wrap{
-  margin-top: 45px;
+  margin-top: 150px;
 }
 .soon-section .hero-heading {
   font-size: 80px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 .soon-section .home-desc {
   margin-top: 0;
@@ -2665,6 +2694,23 @@ filter: blur(75px);
 }
 .app-soon-section .hero-heading {
   max-width: 360px;
+}
+
+.gallery-slider {
+  width: 100%;
+}
+.image-container {
+  width: 100%;
+  height: 260px;
+  overflow: hidden;
+}
+.swiper {
+  width: 100%;
+}
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -3381,6 +3427,12 @@ filter: blur(75px);
   font-size: 17px;
   line-height: 26px;
 }
+.tsx-sub .tsx-box{
+  flex: calc(100% / 4) 0 0;
+}
+.image-container {
+  height: 220px;
+}
 }
 @media (max-width: 767px){
   .start-wrap .d-left::after{
@@ -3668,12 +3720,6 @@ nav > ul{
 .tsx-wrap, .tsx-sub {
   margin-top: 35px;
 }
-.tsx-sub .tsx-content h4 {
-  font-size: 24px;
-}
-.tsx-sub .tsx-content p {
-  font-size: 18px;
-}
 .sw-detail::after{
   background-size: 350%;
 }
@@ -3901,10 +3947,17 @@ nav > ul{
   min-width: unset;
 }
 .soon-section .home-wrap{
-  margin-top: 0;
+  margin-top: 120px;
 }
 .app-soon-section .hero-heading {
   max-width: none;
+}
+.social li a {
+  width: 38px;
+  height: 38px;
+}
+.tsx-sub .tsx-box{
+  flex: calc(100% / 3) 0 0;
 }
 }
 @media (max-width: 640px) {
@@ -3983,25 +4036,22 @@ nav > ul{
 .mw-desc {
   max-width: calc(100% - 30px);
 }
-.footer-credit {
-  padding: 25px 15px;
-}
 .footer-wrap {
   padding: 0 0 15px 0;
 }
 .tsx-img, .tsx-sub .tsx-img {
-  width: 124px;
-  height: 124px;
+  width: 104px;
+  height: 104px;
 }
 .tsx-content h4 {
-  font-size: 28px;
-  line-height: 32px;
+  font-size: 26px;
+  line-height: 30px;
 }
 .tsx-content p {
   font-size: 20px;
 }
 .tsx-main, .tsx-sub {
-  gap: 20px;
+  gap: 20px 0;
 }
 .tsx-sub .tsx-img .tsx-link {
   top: calc(100% - 20px);
@@ -4052,6 +4102,12 @@ nav > ul{
 }
 .card-section::before {
   background-size: 160%;
+}
+.tsx-sub .tsx-box{
+  flex: calc(100% / 2) 0 0;
+}
+.image-container {
+  height: 200px;
 }
 }
 @media (max-width: 479px){
@@ -4156,9 +4212,6 @@ nav > ul{
 .mw-desc {
   max-width: calc(100% - 15px);
 }
-.footer-credit {
-  padding: 20px 15px;
-}
 .fw-address{
   margin-top: -5px;
   margin-bottom: 20px;
@@ -4235,8 +4288,8 @@ nav > ul{
   gap: 15px;
 }
 .tsx-content h4 {
-  font-size: 26px;
-  line-height: 30px;
+  font-size: 24px;
+  line-height: 26px;
 }
 .tsx-content p {
   font-size: 18px;
@@ -4244,17 +4297,11 @@ nav > ul{
 .tsx-link{
   right: 30px;
 }
-.tsx-sub .tsx-content h4 {
-  font-size: 22px;
-}
-.tsx-sub .tsx-content p {
-  font-size: 17px;
-}
 .tsx-sub .tsx-box {
   padding: 0 20px 20px;
 }
 .tsx-main, .tsx-sub {
-  gap: 15px;
+  gap: 15px 0;
 }
 .sw-detail {
   padding: 20px;
@@ -4339,6 +4386,21 @@ nav > ul{
 .card-icon{
   margin-bottom: 15px;
 }
+
+.tsx-main .tsx-link {
+  right: auto;
+  left: 80px;
+  top: 70px;
+  transform: none;
+  width: 32px;
+  height: 32px;
+}
+.soon-section .home-wrap {
+  margin-top: 110px;
+}
+.soon-section .hero-heading {
+  font-size: 46px;
+}
 }
 @media (max-width: 360px){
   .section-heading {
@@ -4411,5 +4473,12 @@ nav > ul{
 }
 .soon-section .hero-heading {
   font-size: 42px;
+}
+.tsx-content h4 {
+  font-size: 22px;
+  line-height: 24px;
+}
+.tsx-content p {
+  font-size: 17px;
 }
 }

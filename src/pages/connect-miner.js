@@ -8,7 +8,6 @@ import Logo from '@/components/Logo'
 
 
 export default function SoonPage() {
-  SoonPage.noLayout = true;
   return (
     <>
       <Head>
@@ -18,15 +17,12 @@ export default function SoonPage() {
 
       <section className='miner-soon-section soon-section flow-hidden'>
         <div className='container'>
-          <div className='py-30'>
-            <Logo/>
-          </div>
           <div className='home-wrap d-flex a-center'>
             <motion.div className='d-left' viewport={{ once: true }} transition={{ type: "spring", bounce: 0.25, duration: 2 }} initial={{ opacity: 0, translateX: -200 }} whileInView={{ opacity: 1, translateX: 0 }}>
             <div className='hw-left'>
-            <h1 className="hero-heading">Pre-sale Coming Soon</h1>
+            <h1 className="hero-heading"><span className='text-gradient'>Pre-sale</span> Coming Soon</h1>
             <p className='home-desc'>Turn compute into income. Cyborg Miner lets you run AI inference tasks from your space and earn rewards — no crypto mining, just real utility powering the next-gen AI economy. Be the infrastructure behind the next generation of intelligent apps. Plug in. Power up. Get rewarded.</p>
-            <Button title="Notify Me" link="/connect-miner" size="btn-md" icon={bell}/>
+            <Button title="Notify Me" link="https://tally.so/r/wazvG9" size="btn-md" icon={bell}/>
             </div>
             </motion.div>
 

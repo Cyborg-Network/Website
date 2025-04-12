@@ -25,7 +25,7 @@ export default function CyborgConnect() {
             <div className='hw-left'>
             <h1 className="hero-heading">Deploy <span className='text-gradient'>AI Apps</span> Anywhere You Desire</h1>
             <p className='home-desc'>Cyborg supports a vast network of AI accelerators at the edge powered by blockchain</p>
-            <Button title="Deploy Now" link="/deploy-app" size="btn-md" icon={rocket}/>
+            <Button title="Deploy Now" link="/deploy-app" target="_blank" size="btn-md" icon={rocket}/>
             </div>
             </motion.div>
             </div>
