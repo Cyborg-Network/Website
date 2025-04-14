@@ -6,7 +6,7 @@ const NotFound = () => {
     
     <section className='common-section error-section'>
         <div className='container'>
-            <h1 className="mb-80">404 | Page Not Found</h1>
+            <h1>404 | Page Not Found</h1>
             <Button title="Go to Homepage" link="/" size="btn-md"/>
         </div>
     </section>
