@@ -1,20 +1,19 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import solutionCover from '../../public/images/solution-cover.svg'
-import Architecture from '../../public/images/architecture.svg'
-import ArchitectureMob from '../../public/images/architecture-mob.svg'
-import StackBarChart from '@/components/StackBarChart'
-import LineBarChart from '@/components/LineBarChart'
-import Circle from '@/components/icons/Circle'
-import { motion } from "framer-motion"
-
+import Head from "next/head";
+import Image from "next/image";
+import solutionCover from "../../public/images/solution-cover.svg";
+import Architecture from "../../public/images/architecture.svg";
+import ArchitectureMob from "../../public/images/architecture-mob.svg";
+import StackBarChart from "@/components/StackBarChart";
+import LineBarChart from "@/components/LineBarChart";
+import Circle from "@/components/icons/Circle";
+import { motion } from "framer-motion";
 
 export default function Solution() {
   return (
     <>
       {/* <Head>
         <title>Solution | Cyborg Network</title>
-        <meta name="description" content="Cyborg Network - An Untapped Market" />
+        <meta name="description" content="Cyborg Network - The Next Gen AI Infra" />
       </Head>
         <section className='common-section solution-hero-section flow-hidden'>
         <div className='container'>
@@ -28,7 +27,7 @@ export default function Solution() {
           <motion.div className='d-right'  viewport={{ once: true }} transition={{ type: "spring", bounce: 0.25, duration: 2, delay: 0.75 }} initial={{ opacity: 0, translateX: 200 }} whileInView={{ opacity: 1, translateX: 0 }}>
           <div className="sw-right">
           <div className='sw-detail'>
-            <h2>An Untapped Market</h2>
+            <h2>The Next Gen AI Infra</h2>
             <p>Many businesses and individuals already rely on edge computing to manage and process their data, but the potential for edge systems to become the backbone of the decentralized web remains largely untapped. With the emergence of IoT, 5G networks, and smart cities, the demand for edge computing infrastructure is only going to increase.</p>
           </div>
           <div className='sw-detail'>
@@ -170,5 +169,5 @@ export default function Solution() {
             </div>
             </section> */}
     </>
-  )
+  );
 }

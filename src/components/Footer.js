@@ -37,6 +37,7 @@ const Footer = () => {
         <div className='footer-credit'>
             <div className='fc-left'>
                 <p>© Cyborg {new Date().getFullYear()}</p>
+                <p>© 2023 NVIDIA, the NVIDIA logo</p>
                 <Link href='mailto:info@cyborgnetwork.io'>info@cyborgnetwork.io</Link>
             </div>
             <div className='fc-left'>

@@ -19,8 +19,9 @@ import ten from '../../public/images/gallery/10.jpeg'
 import eleven from '../../public/images/gallery/11.jpg'
 import twelve from '../../public/images/gallery/12.jpg'
 import thirteen from '../../public/images/gallery/13.jpg'
+import fourteen from '../../public/images/gallery/14.jpeg'
 
-const images = [one, two, three, four,five,six,seven,eight,nine,ten,eleven,twelve,thirteen];
+const images = [one, two, three, four,five,six,seven,eight,nine,ten,eleven,twelve,thirteen, fourteen];
 
 const GallerySlider = () => {
   return (
