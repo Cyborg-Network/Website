@@ -27,7 +27,7 @@ const Footer = () => {
                 <ul className='fw-link'>
                 <li><Link href="/" className={`${router.asPath === "/team" ? "active" : ""}`}>About</Link></li>
                 <li><Link href="/" className={`${router.asPath === "/documentation" ? "active" : ""}`}>Documentation</Link></li>
-                <li><Link href="/docs/tokenomics.pdf" className={`${router.asPath === "/tokenomics" ? "active" : ""}`}>Tokenomics</Link></li>
+                {/* <li><Link href="/docs/tokenomics.pdf" className={`${router.asPath === "/tokenomics" ? "active" : ""}`}>Tokenomics</Link></li> */}
                 <li><Link href='mailto:info@cyborgnetwork.io' className={`${router.asPath === "/contact" ? "active" : ""}`}>Contact Us</Link></li>
                 <li><Link href="/privacy-policy" className={`${router.asPath === "/privacy-policy" ? "active" : ""}`}>Privacy Policy</Link></li>
                 </ul>
