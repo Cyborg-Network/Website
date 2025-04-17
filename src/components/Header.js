@@ -32,7 +32,7 @@ const Header = () => {
                     <Link href="/">Docs</Link>
                     <div className='dropdown'>
                         <ul>
-                            <li onClick={()=>setToggle(!toggle)}><Link href="/docs/white-paper.pdf" target='_blank'>Litepaper</Link></li>
+                            <li onClick={()=>setToggle(!toggle)}><Link href="/docs/cyborg-lite-paper-v2.pdf" target='_blank'>Litepaper</Link></li>
                             <li onClick={()=>setToggle(!toggle)}><Link href="/docs/one-pager.pdf" target='_blank'>One Pager</Link></li>
                         </ul>
                     </div>
