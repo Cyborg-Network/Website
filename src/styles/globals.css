@@ -2712,6 +2712,10 @@ filter: blur(75px);
   justify-content: center;
   align-items: center;
 }
+.fc-right img{
+  max-width: 280px;
+  height: auto;
+}
 
 
 
@@ -3433,6 +3437,11 @@ filter: blur(75px);
 .image-container {
   height: 220px;
 }
+.footer-credit{
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  gap: 20px 30px;
+}
 }
 @media (max-width: 767px){
   .start-wrap .d-left::after{
@@ -3958,6 +3967,9 @@ nav > ul{
 }
 .tsx-sub .tsx-box{
   flex: calc(100% / 3) 0 0;
+}
+.fw-content.fw-second{
+  margin-bottom: 10px;
 }
 }
 @media (max-width: 640px) {

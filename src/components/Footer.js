@@ -5,6 +5,8 @@ import Linkedin from './icons/Linkedin'
 import Twitter from './icons/Twitter'
 import Telegram from './icons/Telegram'
 import { useRouter } from 'next/router'
+import f6s from '../../public/images/f6s.jpg'
+import Image from 'next/image'
 
 const Footer = () => {
 
@@ -36,12 +38,14 @@ const Footer = () => {
         </div>
         <div className='footer-credit'>
             <div className='fc-left'>
-                <p>© Cyborg {new Date().getFullYear()}</p>
+                <p>© Cyborg {new Date().getFullYear()}, All right reserved.</p>
                 <p>© 2023 NVIDIA, the NVIDIA logo</p>
                 <Link href='mailto:info@cyborgnetwork.io'>info@cyborgnetwork.io</Link>
             </div>
-            <div className='fc-left'>
-                <p>All right reserved.</p>
+            <div className='fc-right'>
+                <Link href="https://www.f6s.com/company/cyborg-network" target='_blank'>
+                    <Image src={f6s} alt="ai"/>
+                </Link>
             </div>
             </div>
         </div>
