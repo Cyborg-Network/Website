@@ -16,7 +16,7 @@ export default function PrivacyPolicy() {
           <p className="hero-desc">Last Updated: April 1, 2025</p>
           <div className="legal-content">
             <p>
-              At [Your Company Name], we take your privacy seriously. This
+              At ResoluteX Technology Labs, Ltd., we take your privacy seriously. This
               Privacy Policy explains the types of information we collect from
               you, how we use it, and the measures we take to protect your
               personal information. Please read this Privacy Policy carefully to
@@ -157,10 +157,12 @@ export default function PrivacyPolicy() {
               If you have any questions or concerns about this Privacy Policy or
               our data practices, please contact us at:
             </p>
-            <p>[Your Company Name]</p>
-            <p>Email: [contact@yourcompany.com]</p>
-            <p>Phone: [Your Phone Number]</p>
-            <p>Address: [Your Company Address]</p>
+            <br></br>
+            <p><strong>ResoluteX Technology Labs, Ltd.</strong></p>
+            <p><strong>Email:</strong> info@cyborgnetwork.io</p>
+            <p><span className="break"><strong>Address:</strong> DIFC, Innovation Hub</span>
+            <span className="break">Gate Avenue- South Zone</span>
+                Dubai, United Arab Emirates</p>
           </div>
         </div>
       </section>
