@@ -4,6 +4,7 @@ import Link from 'next/link'
 import Linkedin from './icons/Linkedin'
 import Twitter from './icons/Twitter'
 import Telegram from './icons/Telegram'
+import Medium from './icons/Medium'
 import { useRouter } from 'next/router'
 import f6s from '../../public/images/f6s.jpg'
 import Image from 'next/image'
@@ -22,6 +23,7 @@ const Footer = () => {
                 <li><Link className='twitter' href="https://twitter.com/Cyborg_network_"><Twitter/></Link></li>
                 <li><Link href="https://in.linkedin.com/company/cyborg-network"><Linkedin/></Link></li>
                 <li><Link href="https://t.me/CyborgNetworkOfficial"><Telegram/></Link></li>
+                <li><Link href="https://medium.com/@info_94282"><Medium/></Link></li>
             </ul>
             </div>
             <div className='fw-content fw-second'>
