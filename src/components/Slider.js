@@ -27,6 +27,7 @@ import dac from '../../public/images/partners/dac.png'
 import pol from '../../public/images/partners/pol.png'
 import wfgp from '../../public/images/partners/wfgp.svg'
 import pban from '../../public/images/partners/pba.png'
+import mcit from '../../public/images/partners/mcit.png'
 
 
 const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
@@ -131,19 +132,19 @@ function Partner() {
       dots: false
     },
     480: {
-      items: 3,
+      items: 2,
       dots: false
     },
     640: {
-      items: 4,
+      items: 3,
       dots: false
     },
     768: {
-      items: 5,
+      items: 4,
       dots: false
     },
     1024: {
-      items: 6,
+      items: 5,
       dots: false
     }
   }
@@ -163,7 +164,7 @@ function Partner() {
 
   function Programs() {
       return (
-        <OwlCarousel responsive={ResponsiveOne} className='owl-theme' autoplay items={6} smartSpeed={3000} autoplayTimeout={3000} loop>
+        <OwlCarousel responsive={ResponsiveOne} className='owl-theme' autoplay items={5} smartSpeed={3000} autoplayTimeout={3000} loop>
           <div className="ps-content">
           <a href=""><Image src={nip} alt="nip"/></a>
           </div>
@@ -181,6 +182,9 @@ function Partner() {
           </div>
           <div className="ps-content">
           <a href=""><Image src={pol} alt="pol"/></a>
+          </div>
+          <div className="ps-content">
+          <a href=""><Image className="mcit" src={mcit} alt="mcit"/></a>
           </div>
           <div className="ps-content">
           <a href=""><Image src={wfgp} alt="wfgp"/></a>

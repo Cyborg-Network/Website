@@ -2578,12 +2578,12 @@ filter: blur(75px);
   height: auto;
 }
 .programs-section .owl-carousel .owl-item .ps-content{
-  padding: 0 30px;
+  padding: 0 15px;
 }
 .programs-section .owl-carousel .owl-item .ps-content a{
     width: 100%;
     display: inline-block;
-    height: 85px;
+    height: 55px;
     margin: 0 15px;
 }
 .programs-section .owl-carousel .owl-item img {
@@ -2716,8 +2716,6 @@ filter: blur(75px);
   max-width: 280px;
   height: auto;
 }
-
-
 
 
 
@@ -3974,7 +3972,7 @@ nav > ul{
 }
 @media (max-width: 640px) {
 .programs-section .owl-carousel .owl-item .ps-content {
-    padding: 0 20px;
+    padding: 0 15px;
 }
   .nine-section .box-items{
     text-align: center;

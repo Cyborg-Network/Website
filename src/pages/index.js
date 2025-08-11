@@ -28,9 +28,8 @@ export default function Home() {
               whileInView={{ opacity: 1, translateY: 0 }}
             >
               <h1 className="hero-heading">
-                <span className="break">Blockchain Powered</span>{" "}
-                <span className="text-gradient">AI Inferencing</span> Network
-              </h1>
+                <span className="break">Hyperlocal Infrastructure</span>{" "}
+                <span className="text-gradient">Powering Real-Time AI</span></h1>
               <motion.div
                 viewport={{ once: true }}
                 transition={{
@@ -254,7 +253,7 @@ export default function Home() {
             initial={{ opacity: 0, translateY: 100 }}
             whileInView={{ opacity: 1, translateY: 0 }}
           >
-            Infrastructure to support AI inferencing at scale. Build, optimize,
+            Infrastructure to support AI inferencing locally. Build, optimize,
             and run models on a decentralized network with ease.
           </motion.p>
           <motion.div
