@@ -3,8 +3,9 @@ import { mailOptions, transporter } from "@/config/nodemailer";
 const CONTACT_MESSAGE_FIELDS = {
   name: "Name",
   email: "Email",
-  subject: "Subject",
-  message: "Message",
+  city: "City",
+  country: "Country",
+  zipCode: "ZIP Code",
 };
 
 const generateEmailContent = (data) => {

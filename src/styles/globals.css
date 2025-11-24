@@ -261,17 +261,16 @@ a{
   align-items: center;
   justify-content: center;
   border-radius: 100%;
-  position: absolute;
   cursor: pointer;
-  background: rgba(255, 255, 255, 0.25);
-  border: 2px solid rgba(26, 28, 27, 0.25);
+  background: #393D3B;
   transition: all 0.5s linear;
 }
 .close:hover{
-  background: rgba(255, 255, 255, 0.5);
+  background: #454746;
   transition: all 0.5s linear;
 }
 .headline .close{
+  position: absolute;
   top: 50%;
   transform: translateY(-50%);
   right: 25px;
@@ -418,6 +417,7 @@ button.btn{
 }
 .btn-icon{
   max-width: 18px;
+  max-height: 18px;
   height: auto;
 }
 .text-gradient{
@@ -2030,15 +2030,15 @@ background: linear-gradient(160deg, rgba(1, 218, 99, 0.5), rgba(1, 218, 99, 0) 2
   margin: 0 auto;
 }
 .fwl-content{
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .fwl-content:last-child{
   margin-bottom: 0;
 }
 .fw-item{
   padding: 22px 25px;
-  clip-path: var(--clip-15);
   background: var(--bg-box);
+  border-radius: 15px;
 }
 .fw-header{
   display: flex;
@@ -2046,6 +2046,7 @@ background: linear-gradient(160deg, rgba(1, 218, 99, 0.5), rgba(1, 218, 99, 0) 2
   cursor: pointer;
 }
 .fw-header h4{
+  color: #fff;
   padding-right: 25px;
   font-size: 18px;
   line-height: 25px;
@@ -2095,24 +2096,46 @@ background: linear-gradient(160deg, rgba(1, 218, 99, 0.5), rgba(1, 218, 99, 0) 2
   max-width: 640px;
   margin: 0 auto;
 }
+.cw-field-group{
+  display: flex;
+  gap: 20px;
+}
 .cw-field{
   margin-bottom: 20px;
+  flex: 1;
 }
-.cw-field input, .cw-field textarea{
-  background: var(--bg-overlay);
-  border: 1px solid var(--bg-overlay);
+.cw-checkbox{
+    text-align: left;
+    display: flex;
+    align-items: start;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #dcdcdc;
+    letter-spacing: 0.5px;
+    line-height: 19px;
+}
+.cw-checkbox input[type="checkbox"] {
+    width: 25px;
+    height: 17px;
+    margin-left: 10px;
+    margin-right: 7px;
+    margin-top: 1px;
+}
+.cw-field input, .cw-field textarea {
+  background: #272c29;
+  border: 1px solid #525453;
   outline: none;
-  border-radius: 0;
-  padding: 20px 25px;
-  min-height: 72px;
+  border-radius: 72px;
+  padding: 15px 25px;
+  min-height: 56px;
   width: 100%;
   color: var(--text-light-87);
-  font-size: 18px;
+  font-size: 16px;
   resize: none;
   transition: all 0.5s linear;
 }
 .cw-field input:hover, .cw-field textarea:hover{
-  border: 1px solid rgba(46, 210, 115, 0.25);
+  border: 1px solid rgba(46, 210, 115, 0.5);
   transition: all 0.5s linear;
 }
 .cw-field input:focus, .cw-field textarea:focus{
@@ -2136,11 +2159,12 @@ textarea:-webkit-autofill:focus {
   border: none;
   outline: none;
   width: 100%;
-  height: 72px;
-  font-size: 20px;
-  font-weight: var(--medium);
+  height: 56px;
+  font-size: 16px;
+  border-radius: 56px;
+  cursor: pointer;
+  font-weight: var(--semibold);
   background: var(--bg-btn);
-  clip-path: var(--clip-15);
   transition: all 0.5s linear;
 }
 .cw-submit:hover{
@@ -2158,11 +2182,10 @@ textarea:-webkit-autofill:focus {
   height: 100vh;
   position: fixed;
   z-index: 9;
-  background: rgb(12 13 12 / 95%);
+  background: rgba(46, 50, 48, 0.95);
   top: 0;
   left: 0;
   padding: 15px;
-  backdrop-filter: blur(15px);
   opacity: 0;
   visibility: hidden;
   transition: all 0.5s linear;
@@ -2172,9 +2195,10 @@ textarea:-webkit-autofill:focus {
   max-width: 480px;
   width: 100%;
   text-align: center;
-  background: var(--bg-overlay);
-  padding: 60px;
+  background: #141615;
+  border-radius: 12px;
   opacity: 0;
+  box-shadow: -14px 14px 154px #3C4E44;
   transform: scale(0.75);
   transition: all 0.35s linear;
 }
@@ -2188,9 +2212,16 @@ textarea:-webkit-autofill:focus {
   transform: scale(1);
   transition: all 0.5s linear;
 }
-.lm-content .close{
-  right: 15px;
-  top: 15px;
+.lm-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 25px;
+    color: #DCDCDC;
+    border-bottom: 1px solid #393D3B;
+}
+.lm-body{
+  padding: 25px;
 }
 .nm-head{
   font-size: 22px;
@@ -2599,8 +2630,8 @@ filter: blur(75px);
   display: inline-block;
   position: fixed;
   z-index: 8;
-  top: 20px;
-  right: 20px;
+  top: 15px;
+  right: 25px;
   opacity: 1;
   visibility: visible;
   transform: translateX(0);
@@ -2619,9 +2650,9 @@ filter: blur(75px);
   align-items: center;
   color: var(--text-green);
   display: inline-flex;
-  background: var(--bg-box);
-  clip-path: var(--clip-16);
+  background: rgb(45 48 47);
   min-width: 280px;
+  border-radius: 12px;
 }
 .form-toast p span{
   margin-right: 3px;
@@ -2715,9 +2746,25 @@ filter: blur(75px);
 .fc-right img{
   max-width: 280px;
   height: auto;
+  border-radius: 60px;
+}
+.spinner {
+  border: 2px solid #338D5C;
+  border-top: 2px solid #fff;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  animation: spin 1s linear infinite;
+  display: inline-block;
+  margin-right: 5px;
+  position: relative;
+  top: 2px;
 }
 
-
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
 
 
 

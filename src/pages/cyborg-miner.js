@@ -130,7 +130,7 @@ export default function CyborgMiner() {
             </motion.div>
             <div className="nv-flag">
               <motion.div
-                class="nv-flag-item"
+                className="nv-flag-item"
                 viewport={{ once: true }}
                 transition={{ ease: "easeInOut", duration: 1, delay: 0.35 }}
                 initial={{ opacity: 0, translateY: 50 }}
@@ -139,7 +139,7 @@ export default function CyborgMiner() {
                 <Image src={office} alt="office" />
               </motion.div>
               <motion.div
-                class="nv-flag-item"
+                className="nv-flag-item"
                 viewport={{ once: true }}
                 transition={{ ease: "easeInOut", duration: 1, delay: 0.45 }}
                 initial={{ opacity: 0, translateY: -50 }}
@@ -148,7 +148,7 @@ export default function CyborgMiner() {
                 <Image src={shoopingCentre} alt="shopping centre" />
               </motion.div>
               <motion.div
-                class="nv-flag-item"
+                className="nv-flag-item"
                 viewport={{ once: true }}
                 transition={{ ease: "easeInOut", duration: 1, delay: 0.55 }}
                 initial={{ opacity: 0, translateY: 50 }}
@@ -157,7 +157,7 @@ export default function CyborgMiner() {
                 <Image src={edgeData} alt="edge data centre" />
               </motion.div>
               <motion.div
-                class="nv-flag-item"
+                className="nv-flag-item"
                 viewport={{ once: true }}
                 transition={{ ease: "easeInOut", duration: 1, delay: 0.65 }}
                 initial={{ opacity: 0, translateY: -50 }}

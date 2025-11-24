@@ -8,6 +8,7 @@ import Medium from './icons/Medium'
 import { useRouter } from 'next/router'
 import f6s from '../../public/images/f6s.jpg'
 import Image from 'next/image'
+import Github from './icons/Github'
 
 const Footer = () => {
 
@@ -24,6 +25,7 @@ const Footer = () => {
                 <li><Link href="https://in.linkedin.com/company/cyborg-network"><Linkedin/></Link></li>
                 <li><Link href="https://t.me/CyborgNetworkOfficial"><Telegram/></Link></li>
                 <li><Link href="https://medium.com/@info_94282"><Medium/></Link></li>
+                <li><Link href="https://github.com/Cyborg-Network"><Github/></Link></li>
             </ul>
             </div>
             <div className='fw-content fw-second'>
