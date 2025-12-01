@@ -6,8 +6,23 @@ import { Tesimonial, Partner, Backer, Programs } from "@/components/Slider";
 import Sparks from "../../public/images/sparks.svg";
 import ExtLink from "../../public/images/external-link.svg";
 import { motion } from "framer-motion";
+import { useRef, useState } from "react";
 
 export default function Home() {
+  const videoRef = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  const togglePlay = () => {
+    if (!videoRef.current) return;
+
+    if (videoRef.current.paused) {
+      videoRef.current.play();
+      setIsPlaying(true);
+    } else {
+      videoRef.current.pause();
+      setIsPlaying(false);
+    }
+  };
   return (
     <>
       <Head>
@@ -80,6 +95,54 @@ export default function Home() {
         >
           <Image src={wavy} alt="wavy" className="wavy-image" />
         </motion.div>
+      </section>
+
+      <section className="common-section home-video-section flow-hidden">
+        <div className="container">
+          <motion.div
+            viewport={{ once: true }}
+            transition={{ type: "spring", bounce: 0.25, duration: 2 }}
+            initial={{ opacity: 0, translateY: 100 }}
+            whileInView={{ opacity: 1, translateY: 0 }}
+          >
+            <div className="video-wrapper">
+              <video
+                ref={videoRef}
+                poster="/images/poster.png"
+                className="introVideo"
+                playsInline
+                onClick={togglePlay}
+              >
+                <source src="https://firebasestorage.googleapis.com/v0/b/website-61898.firebasestorage.app/o/intro%20optimized.mp4?alt=media&token=fe4f6c73-6284-4f55-840a-a118b3fb8a88" type="video/mp4" />
+              </video>
+
+              <div
+                className={`controls-overlay ${isPlaying ? "hide" : ""}`}
+                onClick={togglePlay}
+              >
+                <button
+                  className="play-button"
+                  aria-label="Play video"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    togglePlay();
+                  }}
+                >
+                  <svg width="22" height="26" viewBox="0 0 19 22" fill="none">
+                    <path
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M3.15734 0.559058C1.8884 -0.226473 0.25 0.686213 0.25 2.17861V20.1018C0.25 21.5942 1.88841 22.5069 3.15734 21.7214L17.6338 12.7598C18.8367 12.0151 18.8367 10.2653 17.6338 9.52068L3.15734 0.559058Z"
+                      fill="#173337ff"
+                    />
+                  </svg>
+                </button>
+
+                <p className="video-label">Introducing Cyborg</p>
+              </div>
+            </div>
+          </motion.div>
+        </div>
       </section>
 
       <section className="common-section start-section flow-hidden">

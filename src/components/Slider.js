@@ -21,7 +21,7 @@ import aws from '../../public/images/backers/aws.png'
 import ms from '../../public/images/backers/ms.png'
 import nip from '../../public/images/partners/nip.png'
 import cess from '../../public/images/partners/cess.png'
-import ezkl from '../../public/images/partners/ezkl.png'
+//import ezkl from '../../public/images/partners/ezkl.png'
 import difc from '../../public/images/partners/difc.png'
 import dac from '../../public/images/partners/dac.png'
 import pol from '../../public/images/partners/pol.png'
@@ -171,9 +171,9 @@ function Partner() {
           <div className="ps-content">
           <a href=""><Image src={cess} alt="cess"/></a>
           </div>
-          <div className="ps-content">
+          {/* <div className="ps-content">
           <a href=""><Image src={ezkl} alt="ezkl"/></a>
-          </div>
+          </div> */}
           <div className="ps-content">
           <a href=""><Image src={difc} alt="difc"/></a>
           </div>

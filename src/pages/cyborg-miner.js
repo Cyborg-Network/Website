@@ -256,7 +256,7 @@ export default function CyborgMiner() {
             initial={{ opacity: 0, scale: 0.5 }}
             whileInView={{ opacity: 1, scale: 1 }}
           >
-            <span>Unlock</span> Limitless Income
+            <span className="text-gradient">Unlock</span> Limitless Income
           </motion.h1>
         </div>
       </section>
@@ -271,7 +271,7 @@ export default function CyborgMiner() {
             whileInView={{ opacity: 1, translateY: 0 }}
           >
             <span className="text-gradient light">
-              Just connect to power and the internet—let your miner do the rest
+              Just connect to power and the internet - let your miner do the rest
             </span>
           </motion.h1>
           <div className="card-wrap">
