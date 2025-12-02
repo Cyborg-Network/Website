@@ -340,7 +340,7 @@ export default function Team() {
                   </Link>
                 </div>
                 <div className="tsx-content">
-                  <h4>Hashana Sathick</h4>
+                  <h4>Hashana</h4>
                   <p>Operations</p>
                 </div>
               </motion.div>
