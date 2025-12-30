@@ -3,12 +3,9 @@ import Image from "next/image";
 import Barath from "../../public/images/team/barath.jpg";
 import Megha from "../../public/images/team/megha.jpg";
 import Kresna from "../../public/images/team/kresna.png";
-import Nathaniel from "../../public/images/team/nathniel.png";
-import Raisul from "../../public/images/team/rony.png";
 import Tom from "../../public/images/team/tom.png";
 import Akash from "../../public/images/team/akash.png";
 import Shashank from "../../public/images/team/shashank.png";
-import Jesse from "../../public/images/team/jesse.png";
 import Hashana from "../../public/images/team/hashana.png";
 import Linkedin from "@/components/icons/Linkedin";
 import { useEffect, useState } from "react";
@@ -241,50 +238,6 @@ export default function Team() {
                 whileInView={{ opacity: 1, translateY: 0 }}
               >
                 <div className="tsx-img">
-                  <Image src={Raisul} alt="Team" />
-                  <Link
-                    href="https://www.linkedin.com/in/md-raisul-islam-rony-a059a7291/"
-                    target="_blank"
-                    className="tsx-link"
-                  >
-                    <Linkedin />
-                  </Link>
-                </div>
-                <div className="tsx-content">
-                  <h4>Raisul Islam</h4>
-                  <p>Substrate Developer</p>
-                </div>
-              </motion.div>
-              <motion.div
-                className="tsx-box"
-                viewport={{ once: true }}
-                transition={{ ease: "easeInOut", duration: 1 }}
-                initial={{ opacity: 0, translateY: 100 }}
-                whileInView={{ opacity: 1, translateY: 0 }}
-              >
-                <div className="tsx-img">
-                  <Image src={Nathaniel} alt="Team" />
-                  <Link
-                    href="https://www.linkedin.com/in/nathaniel-bajo/"
-                    target="_blank"
-                    className="tsx-link"
-                  >
-                    <Linkedin />
-                  </Link>
-                </div>
-                <div className="tsx-content">
-                  <h4>Nathaniel</h4>
-                  <p>Substrate Developer</p>
-                </div>
-              </motion.div>
-              <motion.div
-                className="tsx-box"
-                viewport={{ once: true }}
-                transition={{ ease: "easeInOut", duration: 1 }}
-                initial={{ opacity: 0, translateY: 100 }}
-                whileInView={{ opacity: 1, translateY: 0 }}
-              >
-                <div className="tsx-img">
                   <Image src={Shashank} alt="Team" />
                   <Link
                     href="https://in.linkedin.com/in/ms-shashank"
@@ -297,29 +250,6 @@ export default function Team() {
                 <div className="tsx-content">
                   <h4>Shashank</h4>
                   <p>AI Engineer</p>
-                </div>
-              </motion.div>
-              <motion.div
-                className="tsx-box"
-                viewport={{ once: true }}
-                transition={{ ease: "easeInOut", duration: 1 }}
-                initial={{ opacity: 0, translateY: 100 }}
-                whileInView={{ opacity: 1, translateY: 0 }}
-              >
-                <div className="tsx-img">
-                  <Image src={Jesse} alt="Team" />
-                  <Link
-                    href="#"
-                    onClick={(e) => e.preventDefault()}
-                    target="_blank"
-                    className="tsx-link"
-                  >
-                    <Linkedin />
-                  </Link>
-                </div>
-                <div className="tsx-content">
-                  <h4>Jesse Chejieh</h4>
-                  <p>Rust Systems Engineer</p>
                 </div>
               </motion.div>
               <motion.div

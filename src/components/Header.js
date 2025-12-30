@@ -25,6 +25,7 @@ const Header = () => {
                         <ul>
                             <li onClick={()=>setToggle(!toggle)}><Link href="/cyborg-connect" className={`${router.asPath === "/cyborg-connect" ? "active" : ""}`}>Cyborg Connect</Link></li>
                             <li onClick={()=>setToggle(!toggle)}><Link href="/cyborg-miner" className={`${router.asPath === "/cyborg-miner" ? "active" : ""}`}>Cyborg Miner</Link></li>
+                            <li onClick={()=>setToggle(!toggle)}><Link href="https://oxlo.ai/" className={`${router.asPath === "/" ? "" : ""}`}>Oxlo.ai</Link></li>
                         </ul>
                     </div>
                 </li>
