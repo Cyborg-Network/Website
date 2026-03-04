@@ -7,6 +7,7 @@ import Telegram from './icons/Telegram'
 import Medium from './icons/Medium'
 import { useRouter } from 'next/router'
 import f6s from '../../public/images/f6s.jpg'
+import STL from '../../public/images/STL.webp'
 import Image from 'next/image'
 import Github from './icons/Github'
 
@@ -47,6 +48,10 @@ const Footer = () => {
                 <Link href='mailto:info@cyborgnetwork.io'>info@cyborgnetwork.io</Link>
             </div>
             <div className='fc-right'>
+                <Link href="https://stlpartners.com/articles/edge-computing/50-edge-computing-companies-to-watch-in-2026/"
+   target="_blank" rel="noopener">
+                    <Image src={STL} alt="STL Partners — Top edge companies for 2026"/>
+                </Link>
                 <Link href="https://www.f6s.com/company/cyborg-network" target='_blank'>
                     <Image src={f6s} alt="ai"/>
                 </Link>

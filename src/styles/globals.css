@@ -2667,10 +2667,20 @@ filter: blur(75px);
   justify-content: center;
   align-items: center;
 }
-.fc-right img{
-  max-width: 280px;
-  height: auto;
-  border-radius: 60px;
+.fc-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.fc-right a:first-child img {
+    max-height: 104px;
+    width: auto;
+}
+.fc-right a:last-child img {
+    max-height: 64px;
+    width: auto;
 }
 .spinner {
   border: 2px solid #1A7070;
