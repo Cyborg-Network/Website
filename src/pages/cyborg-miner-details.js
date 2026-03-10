@@ -464,8 +464,9 @@ color: #fff;
       `}</style>
 
       <Head>
-        <title>Cyborg Miner Details</title>
-        <meta name="description" content="Cyborg Network - The Next Gen AI Infra" />
+        <title>Cyborg Network | Cyborg Miner Details</title>
+        <meta name="description" content="Cyborg Miner enables users to contribute compute power to the Cyborg Network and earn rewards by supporting decentralized AI workloads." />
+        <link rel="canonical" href="https://www.cyborgnetwork.io/cyborg-miner-details" />
       </Head>
 
       <section className="common-section cyborg-miner-section flow-hidden">

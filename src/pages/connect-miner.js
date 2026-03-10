@@ -10,11 +10,12 @@ export default function SoonPage() {
   return (
     <>
       <Head>
-        <title>Pre-sale Coming Soon</title>
+        <title>Cyborg Miner | Pre-sale Coming Soon</title>
         <meta
           name="description"
-          content="Cyborg Network - The Next Gen AI Infra"
+          content="Cyborg Miner enables users to contribute compute power to the Cyborg Network and earn rewards by supporting decentralized AI workloads."
         />
+        <link rel="canonical" href="https://www.cyborgnetwork.io/cyborg-miner" />
       </Head>
 
       <section className="miner-soon-section soon-section flow-hidden">

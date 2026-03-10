@@ -11,7 +11,7 @@ const Headline = () => {
 
   return (
     <div className={`headline ${status}`}>
-        <p>Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.<a href=''>Learn More</a></p>
+        <p>Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.<a href='/'>Learn More</a></p>
         <span onClick={updateStatus}><Close/></span>
     </div>
   )

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://www.cyborgnetwork.io/</loc>
+  <lastmod>2026-03-10T00:01:04+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.cyborgnetwork.io/cyborg-connect</loc>
+  <lastmod>2026-03-10T05:00:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.cyborgnetwork.io/cyborg-miner</loc>
+  <lastmod>2026-03-10T05:00:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.cyborgnetwork.io/docs/lite-paper.pdf</loc>
+  <lastmod>2026-03-10T05:00:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.cyborgnetwork.io/docs/one-pager.pdf</loc>
+  <lastmod>2026-03-10T05:00:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.cyborgnetwork.io/team</loc>
+  <lastmod>2026-03-10T05:00:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.cyborgnetwork.io/docs/FAQ.pdf</loc>
+  <lastmod>2026-03-10T05:00:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.cyborgnetwork.io/privacy-policy</loc>
+  <lastmod>2026-03-10T05:00:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.cyborgnetwork.io/deploy-app</loc>
+  <lastmod>2026-03-10T05:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.cyborgnetwork.io/connect-miner</loc>
+  <lastmod>2026-03-10T05:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>

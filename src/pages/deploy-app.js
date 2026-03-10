@@ -10,11 +10,12 @@ export default function SoonPage() {
   return (
     <>
       <Head>
-        <title>App Launching Soon</title>
+        <title>Cyborg Connect | Deploy AI Models on Decentralized Nodes</title>
         <meta
           name="description"
-          content="Cyborg Network - The Next Gen AI Infra"
+          content="Cyborg Connect lets developers deploy and manage AI inference models across a decentralized network of compute nodes with optimized performance and cost."
         />
+        <link rel="canonical" href="https://www.cyborgnetwork.io/deploy-app" />
       </Head>
 
       <section className="app-soon-section soon-section flow-hidden">

@@ -26,11 +26,12 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Home | Cyborg Network</title>
+        <title>Cyborg Network - Hyperlocal Infrastructure Powering Real-Time AI</title>
         <meta
           name="description"
-          content="Cyborg Network - The Next Gen AI Infra"
+          content="A scalable, privacy-first platform for developers and enterprises to run AI workloads seamlessly. Deploy, compute, and scale AI inferencing on a distributed network of Cyborg Miners-faster, cost-effective, and secure."
         />
+        <link rel="canonical" href="https://www.cyborgnetwork.io/" />
       </Head>
 
       <section className="common-section home-hero-section flow-hidden">
@@ -398,6 +399,7 @@ export default function Home() {
                     <input
                       type="email"
                       name="fw-email"
+                      aria-label="Email Address"
                       placeholder="Enter you email"
                     />
                     <button type="submit" className="fw-send">

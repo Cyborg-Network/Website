@@ -1,8 +1,14 @@
 /** @type {import('next').NextConfig} */
 const webpack = require("webpack");
+
 const nextConfig = {
   reactStrictMode: true,
-  webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
+
+  experimental: {
+    optimizeCss: true,
+  },
+
+  webpack: (config) => {
     config.plugins.push(
       new webpack.ProvidePlugin({
         $: "jquery",
@@ -10,6 +16,7 @@ const nextConfig = {
         "window.jQuery": "jquery",
       })
     );
+
     return config;
   },
 };

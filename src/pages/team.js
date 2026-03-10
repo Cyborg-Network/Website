@@ -85,11 +85,12 @@ export default function Team() {
   return (
     <>
       <Head>
-        <title>Team | Cyborg Network</title>
+        <title>Cyborg Network Team | Builders of Decentralized AI Infrastructure</title>
         <meta
           name="description"
-          content="Cyborg Network - The Next Gen AI Infra"
+          content="Meet the team behind Cyborg Network building decentralized AI infrastructure, edge computing solutions and blockchain-powered inference networks."
         />
+        <link rel="canonical" href="https://www.cyborgnetwork.io/team" />
       </Head>
 
       <section className="common-section team-hero-section flow-hidden">

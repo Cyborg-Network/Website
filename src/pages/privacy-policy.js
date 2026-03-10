@@ -4,11 +4,12 @@ export default function PrivacyPolicy() {
   return (
     <>
       <Head>
-        <title>Privacy Policy | Cyborg Network</title>
+        <title>Cyborg Network Privacy Policy | Data Protection & Security</title>
         <meta
           name="description"
-          content="Cyborg Network - The Next Gen AI Infra"
+          content="Learn how Cyborg Network protects your data and privacy while providing decentralized AI infrastructure and distributed computing services."
         />
+        <link rel="canonical" href="https://www.cyborgnetwork.io/privacy-policy" />
       </Head>
       <section className="common-section legal-hero-section">
         <div className="container">

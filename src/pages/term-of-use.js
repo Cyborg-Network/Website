@@ -4,11 +4,12 @@ export default function TermOfUse() {
   return (
     <>
       <Head>
-        <title>Term Of Use | Cyborg Network</title>
+        <title>Cyborg Network Terms of Use | Platform Policies</title>
         <meta
           name="description"
-          content="Cyborg Network - The Next Gen AI Infra"
+          content="Read the Cyborg Network Terms of Use outlining the rules, policies and conditions for using the decentralized AI infrastructure platform."
         />
+        <link rel="canonical" href="https://www.cyborgnetwork.io/term-of-use" />
       </Head>
       <section className="common-section legal-hero-section">
         <div className="container">

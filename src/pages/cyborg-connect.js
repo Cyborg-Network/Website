@@ -13,11 +13,12 @@ export default function CyborgConnect() {
   return (
     <>
       <Head>
-        <title>Cyborg Connect</title>
+        <title>Cyborg Connect | Deploy AI Models on Decentralized Nodes</title>
         <meta
           name="description"
-          content="Cyborg Network - The Next Gen AI Infra"
+          content="Cyborg Connect lets developers deploy and manage AI inference models across a decentralized network of compute nodes with optimized performance and cost."
         />
+        <link rel="canonical" href="https://www.cyborgnetwork.io/cyborg-connect" />
       </Head>
 
       <section className="common-section connect-hero-section flow-hidden">

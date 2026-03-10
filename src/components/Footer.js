@@ -25,7 +25,7 @@ const Footer = () => {
                 <li><Link className='twitter' href="https://twitter.com/Cyborg_network_"><Twitter/></Link></li>
                 <li><Link href="https://in.linkedin.com/company/cyborg-network"><Linkedin/></Link></li>
                 <li><Link href="https://t.me/CyborgNetworkOfficial"><Telegram/></Link></li>
-                <li><Link href="https://medium.com/@info_94282"><Medium/></Link></li>
+                <li><Link href="https://medium.com/@info_94282" rel="noopener noreferrer"><Medium/></Link></li>
                 <li><Link href="https://github.com/Cyborg-Network"><Github/></Link></li>
             </ul>
             </div>
@@ -52,7 +52,7 @@ const Footer = () => {
    target="_blank" rel="noopener">
                     <Image src={STL} alt="STL Partners — Top edge companies for 2026"/>
                 </Link>
-                <Link href="https://www.f6s.com/company/cyborg-network" target='_blank'>
+                <Link href="https://www.f6s.com/company/cyborg-network" target='_blank' rel="noopener noreferrer">
                     <Image src={f6s} alt="ai"/>
                 </Link>
             </div>

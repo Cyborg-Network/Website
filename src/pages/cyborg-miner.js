@@ -17,11 +17,12 @@ export default function CyborgMiner() {
   return (
     <>
       <Head>
-        <title>Cyborg Miner</title>
+        <title>Cyborg Miner | Connect Contribute Earn</title>
         <meta
           name="description"
-          content="Cyborg Network - The Next Gen AI Infra"
+          content="Join a groundbreaking network of AI miners, where your compute power fuels the future of intelligent infrastructure and earns you passive income."
         />
+        <link rel="canonical" href="https://www.cyborgnetwork.io/cyborg-miner" />
       </Head>
 
       <section className="common-section miner-hero-section flow-hidden">
